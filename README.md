@@ -1,5 +1,5 @@
-**Linear Regression with and without Sklearn**
-
+   **Linear Regression with and without Sklearn**
+<img src="comparing_model.png" alt="Comparing both outputs" width = "800">
 
 => So there are 2 main components of this project:
 
@@ -31,4 +31,3 @@ I have used 2 major methods to check the accuracy of the model,
 3) This made finding the values of m and c easy even though it was a function with just 1 feature
 4) AfAfter finding the values of m and c the linear regression line was plotted completely and tthe data points were marked and compared to the original data
 
-<img src=comparing_model.png" alt="Comparing both outputs">
