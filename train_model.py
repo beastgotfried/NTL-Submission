@@ -38,6 +38,7 @@ def train_model(csv_file, plot=True):
 
     y_vals=m*x_vals+c  #implementing the logic to find y
 
+
     plt.plot(x_vals,y_vals,color='#0000FF',label='regression line') #plotting the line 
     plt.scatter(x,y,color='#FF0000',label='data') #plotting the points
 
