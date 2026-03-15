@@ -23,11 +23,11 @@ def train_model(csv_file, plot=True):
     #finding number of input values i= len(x)
 
     #using the formula to calculate m and c
-    numerator=0 
+    numerator=0 #initializing both as 0 to prevent garbage value and other issues such as 0/0
     denominator= 0 
     for i in range(len(x)):
-        numerator += (x[i]-mean_x)*(y[i]-mean_y) 
-        denominator +=(x[i]-mean_x)**2
+        numerator += (x[i]-mean_x)*(y[i]-mean_y) #here to find the numerator we are taking each value of yoe and subtracting it to the mean and then we are multiplying it to the difference between the salary and the mean of the salary
+        denominator +=(x[i]-mean_x)**2 #here to find the denominator we are taking the value of yoe and subtracting it from  the mean 
         
     m=numerator/denominator #slope 
     c=mean_y-(mean_x*m)  #intercept

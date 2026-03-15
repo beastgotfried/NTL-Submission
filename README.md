@@ -1,5 +1,6 @@
    **Linear Regression with and without Sklearn**
 <img src="comparing_model.png" alt="Comparing both outputs" width = "800">
+<img src="output.png" alt="output">
 
 => So there are 2 main components of this project:
 
