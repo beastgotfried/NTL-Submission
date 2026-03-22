@@ -17,8 +17,9 @@ y= df["Survived"] #assigning y the survived column which is the output column gi
 x_train,x_test,y_train,y_test = train_test_split(x,y,test_size=0.1,random_state=42) #training the model, random_State=42 makes sure the model takes data from the given dataset to check for output to mantain uniformity
 
 scaler= StandardScaler() #importing standardscaler function to make sure each criteria/parameter judges the model equally. 
-#in logistic regression often
-x_train_scaled= scaler.fit_transform(x_train)
+#in logistic regression often data stagnation takes place making it so that the data gets heavily dependent on one parameter
+#to fix this we add scalerfunction so that all paarmeters hold equal weightage
+x_train_scaled= scaler.fit_transform(x_train)  
 x_test_scaled = scaler.transform(x_test)
 
 model = LogisticRegression(max_iter=500)
