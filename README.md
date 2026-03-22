@@ -1,7 +1,6 @@
 ***TASK-3 DIFFERENTIATING Logistic Regression and Decision Trees***
-
-![alt text](images\logistic-output.png)
-![alt text](images\decision-tree-output.png)
+<img src="images\decision-tree-output.png" alt="Comparing both outputs" width = "800">
+<img src="images\logistic-output.png" alt="output">
 
 So in this branch of the repository i have pushed the code for differentiating between LR and DT and now i will be explaining my outcomes based on my analysis and what i learnt throughout the process of executing the task
 
