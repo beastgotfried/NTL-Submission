@@ -20,14 +20,18 @@ scaler= StandardScaler() #importing standardscaler function to make sure each cr
 #in logistic regression often data stagnation takes place making it so that the data gets heavily dependent on one parameter
 #to fix this we add scalerfunction so that all paarmeters hold equal weightage
 x_train_scaled= scaler.fit_transform(x_train)  
+#in logistic regression often the data seems to get highly weighted upon by one parameter, to fix this data malformation to prevent one sided predictions we use this function
+x_train_scaled= scaler.fit_transform(x_train) #transforms the scaled values so that each value has equal contribution 
 x_test_scaled = scaler.transform(x_test)
 
-model = LogisticRegression(max_iter=500)
+model = LogisticRegression(max_iter=500) #calling the model to be used, which is logistic regression in this case
 
-model.fit(x_train_scaled, y_train)
+model.fit(x_train_scaled, y_train) #training the model on the scaled output value set we received from using the scaler function 
 
-y_pred = model.predict(x_test_scaled)
+y_pred = model.predict(x_test_scaled) #using the test data to validate the accuracy of the model
 
 print(f"Accuracy: {accuracy_score(y_test,y_pred)}")
 print(f"Classification report:  {classification_report(y_test,y_pred)}")
+
+#printing the accuracy and the classification report showing errors and stuff
 
